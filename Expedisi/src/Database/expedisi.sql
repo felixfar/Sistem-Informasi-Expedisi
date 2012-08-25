@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.9
+-- version 3.4.5
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 26. Februari 2012 jam 03:40
--- Versi Server: 5.5.16
--- Versi PHP: 5.3.8
+-- Generation Time: Aug 25, 2012 at 11:58 PM
+-- Server version: 5.5.16
+-- PHP Version: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_agendoor`
+-- Table structure for table `t_agendoor`
 --
 
 CREATE TABLE IF NOT EXISTS `t_agendoor` (
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `t_agendoor` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data untuk tabel `t_agendoor`
+-- Dumping data for table `t_agendoor`
 --
 
 INSERT INTO `t_agendoor` (`id_agen`, `namaagen`, `alamat`, `kota`, `telp`) VALUES
@@ -45,7 +45,7 @@ INSERT INTO `t_agendoor` (`id_agen`, `namaagen`, `alamat`, `kota`, `telp`) VALUE
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_createjob`
+-- Table structure for table `t_createjob`
 --
 
 CREATE TABLE IF NOT EXISTS `t_createjob` (
@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `t_createjob` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_customer`
+-- Table structure for table `t_customer`
 --
 
 CREATE TABLE IF NOT EXISTS `t_customer` (
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `t_customer` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
--- Dumping data untuk tabel `t_customer`
+-- Dumping data for table `t_customer`
 --
 
 INSERT INTO `t_customer` (`id_customer`, `namacustomer`, `alamat`, `kota`, `telp`) VALUES
@@ -100,7 +100,7 @@ INSERT INTO `t_customer` (`id_customer`, `namacustomer`, `alamat`, `kota`, `telp
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_kapal`
+-- Table structure for table `t_kapal`
 --
 
 CREATE TABLE IF NOT EXISTS `t_kapal` (
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `t_kapal` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data untuk tabel `t_kapal`
+-- Dumping data for table `t_kapal`
 --
 
 INSERT INTO `t_kapal` (`id_kapal`, `namakapal`, `pelayaran`) VALUES
@@ -121,7 +121,7 @@ INSERT INTO `t_kapal` (`id_kapal`, `namakapal`, `pelayaran`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_kota`
+-- Table structure for table `t_kota`
 --
 
 CREATE TABLE IF NOT EXISTS `t_kota` (
@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS `t_kota` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data untuk tabel `t_kota`
+-- Dumping data for table `t_kota`
 --
 
 INSERT INTO `t_kota` (`id_kota`, `namakota`) VALUES
@@ -142,7 +142,7 @@ INSERT INTO `t_kota` (`id_kota`, `namakota`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_pelayaran`
+-- Table structure for table `t_pelayaran`
 --
 
 CREATE TABLE IF NOT EXISTS `t_pelayaran` (
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `t_pelayaran` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data untuk tabel `t_pelayaran`
+-- Dumping data for table `t_pelayaran`
 --
 
 INSERT INTO `t_pelayaran` (`id_pelayaran`, `namapelayaran`, `alamat`, `telp`) VALUES
@@ -165,7 +165,7 @@ INSERT INTO `t_pelayaran` (`id_pelayaran`, `namapelayaran`, `alamat`, `telp`) VA
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_penerima`
+-- Table structure for table `t_penerima`
 --
 
 CREATE TABLE IF NOT EXISTS `t_penerima` (
@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `t_penerima` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data untuk tabel `t_penerima`
+-- Dumping data for table `t_penerima`
 --
 
 INSERT INTO `t_penerima` (`id_penerima`, `namapenerima`, `alamat`, `kota`, `telp`) VALUES
@@ -187,7 +187,7 @@ INSERT INTO `t_penerima` (`id_penerima`, `namapenerima`, `alamat`, `kota`, `telp
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_subcon`
+-- Table structure for table `t_subcon`
 --
 
 CREATE TABLE IF NOT EXISTS `t_subcon` (
@@ -200,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `t_subcon` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data untuk tabel `t_subcon`
+-- Dumping data for table `t_subcon`
 --
 
 INSERT INTO `t_subcon` (`id_subcon`, `namasubcon`, `alamat`, `kota`, `telp`) VALUES
@@ -209,7 +209,7 @@ INSERT INTO `t_subcon` (`id_subcon`, `namasubcon`, `alamat`, `kota`, `telp`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_transportir`
+-- Table structure for table `t_transportir`
 --
 
 CREATE TABLE IF NOT EXISTS `t_transportir` (
@@ -222,7 +222,7 @@ CREATE TABLE IF NOT EXISTS `t_transportir` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data untuk tabel `t_transportir`
+-- Dumping data for table `t_transportir`
 --
 
 INSERT INTO `t_transportir` (`id_transportir`, `namatransportir`, `alamat`, `kota`, `telp`) VALUES
@@ -231,7 +231,7 @@ INSERT INTO `t_transportir` (`id_transportir`, `namatransportir`, `alamat`, `kot
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `t_user`
+-- Table structure for table `t_user`
 --
 
 CREATE TABLE IF NOT EXISTS `t_user` (
@@ -242,14 +242,15 @@ CREATE TABLE IF NOT EXISTS `t_user` (
   `jabatan` varchar(20) NOT NULL,
   `status_otoritas` varchar(10) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data untuk tabel `t_user`
+-- Dumping data for table `t_user`
 --
 
 INSERT INTO `t_user` (`id_user`, `username`, `password`, `namapegawai`, `jabatan`, `status_otoritas`) VALUES
-(1, 'admin', 'admin', 'Imam', 'Admin', 'Admin');
+(1, 'admin', 'admin', 'Imam', 'Admin', 'Admin'),
+(2, 'imam', 'imam', 'imam', 'admin', 'admin');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
